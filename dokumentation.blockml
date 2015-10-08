@@ -1,0 +1,91 @@
+head[
+title[Dokumentation VR-Projekt]
+h2[SMSD SoSe 2015]
+h6[Judith Lindemann, Kai Kühne]
+]
+
+toc[Inhalt]
+
+sec[Thema][
+Ziel des Projektes war es die Möglichkeiten von Google Cardboard mit Hilfe eines Mini Gemes zu explorieren.
+
+Die Interaktionsmöglichkeiten bei Google Cardboard sind auf folgende drei Punkte beschränkt:
+ul[
+- durch Kopfbewegungen Umhersehen
+- Dinge anvisieren
+- einen Button drücken
+]
+
+Deswegen waren wir was die Spielidee angeht auch recht eingeschränkt. Der Benutzer sollte sich innerhalb einer 3D­ Landschaft befinden. Es sollte sich bewegende Objekt geben die der Benutzer “abschießen” kann, indem er sie anvisiert und dann den Magnet­Button an der Google Cardboard Brille drückt.
+
+]
+
+sec[Technologien][
+
+ul[
+- Google Cardboard Brille
+- Unity
+- Google Cardboard Unity SDK
+- Android und iOS
+- Cinema4D
+]
+
+img[cardboard.jpg]
+cap[Abb.][Cardboard Brille]
+
+img[unity.png]
+cap[Abb.][Unity]
+
+img[ios.png]
+cap[Abb.][Xcode und iPhone]
+
+img[c4d.png]
+cap[Abb.][CINEMA 4D]
+
+]
+
+sec[Projektverlauf und Probleme][
+Das a[https://developers.google.com/cardboard/unity/download][Google Cardboard Unity Demo Projekt] war eine sehr gute Grundlage auf die wir unser Mini Game aufbauen konnten. 
+
+img[demo.png]
+cap[Abb.][Demo Projekt]
+
+Wir haben folgende Komponenten aus dem Demo Projekt übernommen:
+
+ul[
+- Stereoskopische Kamera und alles was mit dem SDK verbunden ist
+- Skripte um Objekte anzuvisieren und verschwinden zu lassen
+- Partikeleffekt
+]
+
+Wir haben folgende Komponenten selber hinzugefügt um aus dem Demo Projekt ein Mini Game zu machen:
+
+ul[
+- Landschaft, Gegner und First Person Player
+- Verfolgung des Players durch die Gegner
+- Game Over bei Kollision
+- Score
+- Neustart des Levels nach Game Over
+]
+
+Um die Verfolgung des Players durch die Gegner zu realisieren haben wir das a[https://github.com/ricardojmendez/UnitySteer][UnitySteer Toolkit] verwendet. Den Rest der Komponenten haben wir selber erstellt.
+
+Leider hatten wir nicht mehr genug Zeit um in CINEMA 4D bessere 3D Modelle zu bauen.
+]
+
+sec[Struktur der Applikation][
+
+img[uml.png]
+cap[Abb.][UML Diagramm]
+
+]
+sec[Source Code][
+a[https://github.com/Lindemann/TerrorLand][Source Code auf GitHub]
+]
+sec[Installationsanleitung][
+Das Mini Game lässt sich auf iOS und Android Geräten genau so installieren wie das Google Beispielprojekt. Die genaue Anleitung ist unter a[https://developers.google.com/cardboard/overview] verfügbar.
+]
+
+sec[Resultat][
+html[<iframe width="560" height="315" src="https://www.youtube.com/embed/Z4U4UgOJOlM" frameborder="0" allowfullscreen></iframe>]
+]
